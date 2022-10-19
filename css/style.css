@@ -26,6 +26,35 @@ main {
     text-decoration: none;
     color: #ffffff;
 }
+.right_content {
+    display: flex;
+}
+.login_info {
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+}
+.login_info p {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.header_logout_button {
+    align-items: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.header_login_button {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
 .home_icon {
     color: #FFFFFF;
     font-size: 30px;
@@ -42,6 +71,15 @@ main {
     color: #ffffff;
     font-size: 1rem;
 }
+.errors {
+    margin: 10px 0;
+}
+.errors li {
+    margin-top: 5px;
+    color: #ec008c;
+    text-align: center;
+    list-style: none;
+}
 
 /* upload.php */
 .content_center {
@@ -52,12 +90,18 @@ main {
 .upload_content_form {
     width: 50%;
 }
+.form_flex {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 .upload_content_label {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 50vh;
     background-color: #CCCCCC;
     border-radius: 40px;
     color: #ffffff;
@@ -88,12 +132,13 @@ main {
 .input_text::placeholder {
     color: #E6E6E6;
 }
-.upload_submit {
+.upload_submit,
+.update_button {
     display: block;
     margin-top: 10px;
     border-radius: 18px;
     font-size: 18px;
-    padding: 2px 30px;
+    padding: 5px 30px;
     background: #F15A24;
     color: #ffffff;
     margin-left: auto;
@@ -168,15 +213,6 @@ main {
     padding: 5px 30px;
     background: #CCCCCC;
     margin-left: 10px;
-    color: #FFFFFF;
-}
-
-/* edit.php */
-.update_button {
-    font-size: 18px;
-    border-radius: 18px;
-    padding: 5px 30px;
-    background: #F15A24;
     color: #FFFFFF;
 }
 
@@ -272,9 +308,6 @@ input[type="password"]::placeholder {
 /* レスポンシブ */
 @media (max-width: 900px) {
     /* upload.php */
-    .upload_content_label {
-        height: 355px;
-    }
     .upload_content_form {
         width: 70%;
     }
